@@ -1,0 +1,75 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/03/2020, 07:08:29 AM
+    Author     : osnayder
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+footer{
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+
+#izquierda,#centro,#derecha{
+    border: 1px solid #cccccc;
+    padding: 5px;
+    text-align: center;
+    height: 120px;
+}
+
+#izquierda{
+    float: left;
+    width: 30%;
+}
+
+#centro{
+    float: left;
+    width: 40%;
+    background: #99ccff;
+}
+
+#derecha{
+    float: right;
+    width: 30%;
+}
+
+#imagen-1{
+    max-width: 100%; /* la imagen se adactara a la pantalla pero nunca se estirará mas del tamaño de la misma*/
+    display: block;
+    padding: 20px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1050px) {
+  #izquierda, #centro, #derecha{
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #izquierda, #centro, #derecha{
+     height: 140px;
+     font-size: 4vw;
+  }
+}
